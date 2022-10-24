@@ -1,6 +1,8 @@
-given_tuple = ((1, 2, 3), (4, 5, 6), (7, 8))
+given_tuple = ((1, 1, -5), (30, -15, 56), (81, -60, -39), (-10, 2, 3))
+avg_list = []
 for t in given_tuple:
     avg = 0
     for v in t:
         avg += v / len(t)
-    print(avg)
+    avg_list.append(avg)
+print(avg_list)
